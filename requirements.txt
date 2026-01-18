@@ -1,0 +1,11 @@
+# Jupyter & Tools
+jupyter
+ipykernel
+
+# Data Science Basics
+pandas
+numpy
+matplotlib
+torch
+torchvision
+torchaudio

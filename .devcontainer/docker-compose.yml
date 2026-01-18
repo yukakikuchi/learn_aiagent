@@ -1,0 +1,14 @@
+version: '3.8'
+services:
+  app:
+    container_name: learn-aiagent
+    build:
+      context: ..
+      dockerfile: .devcontainer/Dockerfile
+    platform: linux/arm64
+    volumes:
+      - ..:/app:cached
+    env_file:
+      - ../.env
+    # コンテナを起動し続けるための設定
+    command: /bin/sh -c "while sleep 1000; do :; done"
